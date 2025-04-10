@@ -13,8 +13,10 @@ public class Main {
 
         System.out.println("Данные первого кота: " + firstCat.getName() + " , " +
                 firstCat.getColor() + " , " + firstCat.getAge());
+        firstCat.meow();
 
         System.out.println("Данные второго кота: " + secondCat.getName() + " , " +
                 secondCat.getColor() + " , " + secondCat.getAge());
+        secondCat.meow();
     }
 }
