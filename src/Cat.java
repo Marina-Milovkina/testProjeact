@@ -2,33 +2,42 @@ public class Cat {
     // свойства класса
     private String name;
     private String color;
-    private  int age;
+    private int age;
 
     // конструктор - метод, который создает объект
-public Cat(String name, String color, int age) {
-    this.name = name;
-    this.color = color;
-    this.age = age;
-}
+    public Cat(String name, String color, int age) {
+        this.name = name;
+        this.color = color;
+        this.age = age;
+    }
 
     // методы (геттеры возвращают значение поля)
-public String getName() {
-    return name;
-}
+    public String getName() {
+        return name;
+    }
 
-public String getColor() {
-    return color;
-}
+    public String getColor() {
+        return color;
+    }
 
-public int getAge() {
-    return age;
-}
+    public int getAge() {
+        return age;
+    }
 
-public void meow() {
-    System.out.println(name + " говорит: Мяу!");
-}
+    public void meow() {
+        System.out.println(name + " говорит: Мяу!");
+    }
 
-public void sleep() {
-    System.out.println(name + " спит...");
-}
+    public void sleep() {
+        System.out.println(name + " спит...");
+    }
+
+    // проверка возраста (взрослый или котенок)
+    public void checkAge() {
+        if (age >= 2) {
+            System.out.println(name + " — взрослый кот");
+        } else {
+            System.out.println(name + " — котенок");
+        }
+    }
 }

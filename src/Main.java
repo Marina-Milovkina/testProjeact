@@ -15,9 +15,11 @@ public class Main {
                 firstCat.getColor() + " , " + firstCat.getAge());
         firstCat.meow();
         firstCat.sleep();
+        firstCat.checkAge();
 
         System.out.println("Данные второго кота: " + secondCat.getName() + " , " +
                 secondCat.getColor() + " , " + secondCat.getAge());
         secondCat.meow();
+        secondCat.checkAge();
     }
 }
