@@ -27,4 +27,8 @@ public int getAge() {
 public void meow() {
     System.out.println(name + " говорит: Мяу!");
 }
+
+public void sleep() {
+    System.out.println(name + " спит...");
+}
 }

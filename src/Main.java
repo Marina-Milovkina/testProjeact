@@ -14,6 +14,7 @@ public class Main {
         System.out.println("Данные первого кота: " + firstCat.getName() + " , " +
                 firstCat.getColor() + " , " + firstCat.getAge());
         firstCat.meow();
+        firstCat.sleep();
 
         System.out.println("Данные второго кота: " + secondCat.getName() + " , " +
                 secondCat.getColor() + " , " + secondCat.getAge());
