@@ -50,10 +50,10 @@ public class Cat {
 
     // статический метод для создания массива котов
     public static Cat[] createCats() {
-        Cat[] cats = new Cat[3];
-        cats[0] = new Cat("Борис", "бежевый", 2, true);
-        cats[1] = new Cat("Мурзик", "черно-белый", 3, false);
-        cats[2] = new Cat("Барсик", "рыжий", 1, true);
-        return cats;
+        Cat[] cats = new Cat[3]; // создаем массив из трех объектов Cat
+        cats[0] = new Cat("Борис", "бежевый", 2, true); // заполняем первый элемент
+        cats[1] = new Cat("Мурзик", "черно-белый", 3, false); // заполняем второй элемент
+        cats[2] = new Cat("Барсик", "рыжий", 1, true); // заполняем третий элемент
+        return cats; // возвращаем массив
     };
 }
