@@ -2,24 +2,19 @@
 // метод main - точка входа в программу, компьютер понимает это как "начинай отсюда"
 public class Main {
     public static void main(String[] args) {
+        // создаем массив котов через метод createCats из класса Cat
+        Cat[] cats = Cat.createCats();
 
-        Cat firstCat = new Cat("Борис", "бежевый",2);
-        // Cat - класс, из которого создается объект; firstCat - объект (экземпляр) класса);
-        // new Cat - создание нового объекта с помощью конструктора;
-        // в () аргументы, которые передаются в конструктор класса Cat
+        // перебираем массив котов и вызываем их методы
+        for (int i = 0; i < cats.length; i++){
+            // выводим информацию о коте
+            System.out.println("Имя:" + cats[i].getName() + ", цвет: " + cats[i].getColor() +
+                    ", возраст: " + cats[i].getAge());
 
-
-        Cat secondCat = new Cat( "Мурзик", "черно-белый", 3);
-
-        System.out.println("Данные первого кота: " + firstCat.getName() + " , " +
-                firstCat.getColor() + " , " + firstCat.getAge());
-        firstCat.meow();
-        firstCat.sleep();
-        firstCat.checkAge();
-
-        System.out.println("Данные второго кота: " + secondCat.getName() + " , " +
-                secondCat.getColor() + " , " + secondCat.getAge());
-        secondCat.meow();
-        secondCat.checkAge();
+            // вызываем методы для каждого кота
+            cats[i].meow();
+            cats[i].sleep();
+            cats[i].checkAge();
+        }
     }
 }
