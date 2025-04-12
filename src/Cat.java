@@ -6,7 +6,7 @@ public class Cat {
     private boolean isSleeping;
 
     // конструктор - метод, который создает объект
-    public Cat(String name, String color, int age, boolean b) {
+    public Cat(String name, String color, int age, boolean isSleeping) {
         this.name = name;
         this.color = color;
         this.age = age;
