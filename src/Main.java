@@ -5,11 +5,14 @@ public class Main {
         // создаем массив котов через метод createCats из класса Cat
         Cat[] cats = Cat.createCats();
 
-        // перебираем массив котов и вызываем их методы
+        // выводим информацию о коте через getInfo
         for (int i = 0; i < cats.length; i++) {
+            System.out.println(cats[i].getInfo());
+        // перебираем массив котов и вызываем их методы
+        // for (int i = 0; i < cats.length; i++) {
             // выводим информацию о коте
-            System.out.println("Имя:" + cats[i].getName() + ", цвет: " + cats[i].getColor() +
-                    ", возраст: " + cats[i].getAge());
+          //  System.out.println("Имя: " + cats[i].getName() + ", цвет: " + cats[i].getColor() +
+          //          ", возраст: " + cats[i].getAge());
 
             // вызываем методы для каждого кота
             cats[i].meow();
